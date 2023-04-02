@@ -1,15 +1,9 @@
-import { Fragment, useState } from 'react'
-import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
+import React, { useState } from 'react'
+import { Dialog } from '@headlessui/react'
 import {
-  ArrowPathIcon,
   Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -38,13 +32,16 @@ export default function Nav() {
           </button>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:gap-x-12 lg:justify-end">
-        <a href="#" className="text-lg font-semibold leading-6 text-gray-900">
+          <a href="/" className="text-lg font-semibold leading-6 text-gray-900">
             Home
           </a>
           <a href="#" className="text-lg font-semibold leading-6 text-gray-900">
             About
           </a>
-          <a href="#" className="text-lg font-semibold leading-6 text-gray-900">
+          <a href="/#projects" className="text-lg font-semibold leading-6 text-gray-900">
+            Projects
+          </a>
+          <a href="/resume" className="text-lg font-semibold leading-6 text-gray-900">
             Resume
           </a>
         </div>
@@ -76,18 +73,21 @@ export default function Nav() {
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   Home
                 </a>
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   About
                 </a>
                 <a
-                  href="#"
+                  href="#projects"
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   Resume
                 </a>
