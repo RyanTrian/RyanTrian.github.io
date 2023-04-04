@@ -35,7 +35,7 @@ export default function Nav() {
           <a href="/" className="text-lg font-semibold leading-6 text-gray-900">
             Home
           </a>
-          <a href="#" className="text-lg font-semibold leading-6 text-gray-900">
+          <a href="/about" className="text-lg font-semibold leading-6 text-gray-900">
             About
           </a>
           <a href="/#projects" className="text-lg font-semibold leading-6 text-gray-900">
@@ -78,14 +78,21 @@ export default function Nav() {
                   Home
                 </a>
                 <a
-                  href="#"
+                  href="/"
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   About
                 </a>
                 <a
-                  href="#projects"
+                  href="/#projects"
+                  className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Projects
+                </a>
+                <a
+                  href="/resume"
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   onClick={() => setMobileMenuOpen(false)}
                 >
@@ -94,10 +101,11 @@ export default function Nav() {
               </div>
               <div className="py-6">
                 <a
-                  href="#"
+                  href="https://github.com/RyanTrian/minhtruong"
+                  target="blank"
                   className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Log in
+                  Source Code
                 </a>
               </div>
             </div>
