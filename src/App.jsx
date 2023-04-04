@@ -2,7 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Nav from "./components/Nav"
-import Home from './pages/home';
+import Home from './pages/Home';
+import About from './components/About';
+import Resume from './components/Resume';
 import Error404 from './components/Error404';
 
 import './App.css'
@@ -18,8 +20,12 @@ export default function App() {
           element={<Home />}
         />
         <Route 
+          path="/about"
+          element={<About />}
+        />
+        <Route 
           path="/resume"
-          element={"Hello, no resume here yet"}
+          element={<Resume />}
         />
         <Route
           path="*"
