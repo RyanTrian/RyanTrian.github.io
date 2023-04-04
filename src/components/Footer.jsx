@@ -4,19 +4,19 @@ export default () => {
 
   const footerNavs = [
       {
-          href: 'javascript:void()',
+          href: '/',
           name: 'Home'
       },
       {
-          href: 'javascript:void()',
+          href: '/about',
           name: 'About'
       },
       {
-          href: 'javascript:void()',
+          href: '/#projects',
           name: 'Projects'
       },
       {
-          href: 'javascript:void()',
+          href: '/resume',
           name: 'Resume'
       },
   ]
@@ -45,10 +45,11 @@ export default () => {
           </ul>
           <div className="mt-8 items-center justify-between sm:flex">
               <div className="mt-4 sm:mt-0">
-                  &copy; 2023 Crafted with Tailwind UI.
+                  &copy; 2023 Crafted by me using Tailwind UI.
               </div>
               <div className="mt-6 sm:mt-0">
                   <ul className="flex items-center space-x-4">
+                    {/* Twitter */}
                       <li className="w-10 h-10 border rounded-full flex items-center justify-center">
                           <a href="javascript:void()">
                               <svg class="svg-icon w-6 h-6 text-blue-400" viewBox="0 0 20 20">
@@ -56,7 +57,7 @@ export default () => {
                               </svg>
                           </a>
                       </li>
-
+                    {/* Facebook */}
                       <li className="w-10 h-10 border rounded-full flex items-center justify-center">
                           <a href="javascript:void()">
                               <svg class="svg-icon w-6 h-6 text-blue-700" viewBox="0 0 20 20">
@@ -64,7 +65,7 @@ export default () => {
                               </svg>
                           </a>
                       </li>
-
+                    {/* Dribble */}
                       <li className="w-10 h-10 border rounded-full flex items-center justify-center">
                           <a href="javascript:void()">
                               <svg class="svg-icon w-6 h-6 text-blue-500" viewBox="0 0 20 20">
@@ -72,7 +73,7 @@ export default () => {
                               </svg>
                           </a>
                       </li>
-
+                    {/* Pinterest */}
                       <li className="w-10 h-10 border rounded-full flex items-center justify-center">
                           <a href="javascript:void()">
                               <svg class="svg-icon w-6 h-6 text-red-600" viewBox="0 0 20 20">
