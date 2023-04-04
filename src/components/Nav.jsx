@@ -32,16 +32,16 @@ export default function Nav() {
           </button>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:gap-x-12 lg:justify-end">
-          <a href="/" className="text-lg font-semibold leading-6 text-gray-900">
+          <a href="/" className="nav-btn text-lg font-semibold leading-6 text-gray-900">
             Home
           </a>
-          <a href="/about" className="text-lg font-semibold leading-6 text-gray-900">
+          <a href="/about" className="nav-btn text-lg font-semibold leading-6 text-gray-900">
             About
           </a>
-          <a href="/#projects" className="text-lg font-semibold leading-6 text-gray-900">
+          <a href="/#projects" className="nav-btn text-lg font-semibold leading-6 text-gray-900">
             Projects
           </a>
-          <a href="/resume" className="text-lg font-semibold leading-6 text-gray-900">
+          <a href="/resume" className="nav-btn text-lg font-semibold leading-6 text-gray-900">
             Resume
           </a>
         </div>
