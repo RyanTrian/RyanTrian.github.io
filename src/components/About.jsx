@@ -8,7 +8,7 @@ import Paragraph from './TextComponents/paragraph'
 
 const { title, src, heading, content } = {
   title: "Hi, I'm Minh",
-  src: "https://user-images.githubusercontent.com/82792300/228434187-e4c589ca-aa70-43a0-8bad-65498a2cd1e3.JPG",
+  src: "https://user-images.githubusercontent.com/82792300/230150572-d19a2764-1017-4626-9c2b-7583a15c8bf0.jpg",
   heading: "My Contact Info",
   content: [
     "I recently earned a Full Stack Web Development Certificate from the University of Minnesota on February 2023.", 
