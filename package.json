@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://RyanTrian.github.io/minhtruong",
+  "homepage": "https://ryantrian.github.io/minhtruong",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
