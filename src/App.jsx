@@ -28,7 +28,7 @@ export default function App() {
           element={<Resume />}
         />
         <Route
-          path="*"
+          path="/*"
           element={<Error404 />}
         />
       </Routes>
