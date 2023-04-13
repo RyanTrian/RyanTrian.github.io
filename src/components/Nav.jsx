@@ -4,6 +4,7 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
+import { Link } from 'react-router-dom'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -32,18 +33,18 @@ export default function Nav() {
           </button>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:gap-x-12 lg:justify-end">
-          <a href="/" className="nav-btn text-lg font-semibold leading-6 text-gray-900">
+          <Link to="/" className="nav-btn text-lg font-semibold leading-6 text-gray-900">
             Home
-          </a>
-          <a href="/about" className="nav-btn text-lg font-semibold leading-6 text-gray-900">
+          </Link>
+          <Link to="/about" className="nav-btn text-lg font-semibold leading-6 text-gray-900">
             About
-          </a>
+          </Link>
           <a href="/#projects" className="nav-btn text-lg font-semibold leading-6 text-gray-900">
             Projects
           </a>
-          <a href="/resume" className="nav-btn text-lg font-semibold leading-6 text-gray-900">
+          <Link to="/resume" className="nav-btn text-lg font-semibold leading-6 text-gray-900">
             Resume
-          </a>
+          </Link>
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -70,38 +71,38 @@ export default function Nav() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Home
-                </a>
-                <a
-                  href="/"
+                </Link>
+                <Link
+                  to="/"
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   About
-                </a>
-                <a
-                  href="/#projects"
+                </Link>
+                <Link
+                  to="/#projects"
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Projects
-                </a>
-                <a
-                  href="/resume"
+                </Link>
+                <Link
+                  to="/resume"
                   className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Resume
-                </a>
+                </Link>
               </div>
               <div className="py-6">
                 <a
-                  href="https://github.com/RyanTrian/minhtruong"
+                  to="https://github.com/RyanTrian/minhtruong"
                   target="blank"
                   className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >

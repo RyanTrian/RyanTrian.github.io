@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 
 export default function Paragraph({ content }) {
   return (
@@ -12,13 +13,13 @@ export default function Paragraph({ content }) {
           return (
             <p key={idx} className="pt-4 leading-8">
               {textBeforeLink}
-              <a
-                href={link}
+              <Link
+                to={link}
                 target="blank"
                 className="text-blue-500 hover:text-blue-700 "
               >
                 {textAfterLink}
-              </a>
+              </Link>
             </p>
           );
         } else {

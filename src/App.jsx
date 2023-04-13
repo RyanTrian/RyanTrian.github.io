@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, HashRouter } from 'react-router-dom';
+import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 
 import Nav from "./components/Nav"
 import Home from './pages/Home';
@@ -11,7 +11,7 @@ import './App.css'
 
 export default function App() {
   return (
-    <HashRouter>
+    <Router>
       <Nav />
 
       <Routes>
@@ -29,9 +29,9 @@ export default function App() {
         />
         <Route
           path="*"
-          element={<Error404 />} 
+          element={<Error404 />}
         />
       </Routes>
-    </HashRouter>
+    </Router>
   )
 }
