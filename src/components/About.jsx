@@ -4,7 +4,7 @@ import Container from './TextComponents/Container'
 import Image from './TextComponents/Image'
 import Title from './TextComponents/Title'
 import Heading from './TextComponents/Heading'
-import Paragraph from './TextComponents/paragraph'
+import Paragraph from './TextComponents/Paragraph'
 
 const { title, src, heading, content } = {
   title: "Hi, I'm Minh",
