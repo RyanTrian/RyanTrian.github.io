@@ -15,6 +15,9 @@ const { title, src, heading, content } = {
     "I graduated with a Bachelor of Science in Biology from the Colorado State University, Fort Collins on May 2020.", 
     "I'm passionate about bringing ideas online, also, sharing and teaching new concept.",
     "I love food, movies, gaming, and reading.",
+    "• Languages: Javascript, TypeScript, Python",
+    "• Database: MySQL, MongoDB",
+    "• Tools: Git / GitHub, Node.js, Express, REST APIs, GraphQL, Sequelize, Mongoose, React, Tailwind, Handlebars",
     "An update version of my resume can be found <a>/resume<a>here"
   ]
 }
